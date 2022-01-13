@@ -1,0 +1,10 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because file ignored in .gitignore
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Spec ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
