@@ -4,4 +4,138 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background: black;
+  color: whitesmoke;
+}
+
+body h1 {
+  font-size: 2.5rem;
+}
+
+body form {
+  width: 300px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+}
+
+body form .searchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+}
+
+body form .searchContainer input {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  height: 30px;
+  border: none;
+}
+
+body form .searchContainer button {
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  height: 30px;
+  border: none;
+  background: grey;
+  color: whitesmoke;
+}
+
+body #cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #cardsContainer .card {
+  width: 350px;
+  height: 400px;
+  border: 2px solid whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0 20px;
+}
+
+body #cardsContainer .card h3 {
+  font-size: 1.5rem;
+}
+
+body #cardsContainer .card #movieReleaseDate {
+  font-size: 0.8rem;
+}
+
+body #cardsContainer .card #moviePic {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #cardsContainer .card #movieSummary {
+  max-height: 3.9rem;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1.3rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+body #cardsContainer .card #movieScore {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

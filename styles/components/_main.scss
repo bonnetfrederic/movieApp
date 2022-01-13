@@ -1,0 +1,84 @@
+body {
+  background: black;
+  color: whitesmoke;
+  h1 {
+    font-size: 2.5rem;
+  }
+  form {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+    .searchContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      input {
+        width: 100%;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        height: 30px;
+        border: none;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+        border-radius:  0 0 10px 10px;
+        height: 30px;
+        border: none;
+        background: grey;
+        color: whitesmoke;
+      }
+    }
+  }
+  #cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card {
+      width: 350px;
+      height: 400px;
+      border: 2px solid whitesmoke;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 0 20px;
+      h3 {
+        font-size: 1.5rem;
+      }
+      #movieReleaseDate {
+        font-size: 0.8rem;
+      }
+      #moviePic {
+        object-fit: cover;
+      }
+      #movieSummary {
+        max-height: 3.9rem;
+        text-align: center;
+        overflow:hidden;
+        line-height: 1.3rem;
+        max-height: 8rem;
+        -webkit-box-orient: vertical;
+        display: block;
+        display: -webkit-box;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+      }
+      #movieScore {
+        color: white;
+      }
+    }
+  }
+
+}
