@@ -6,7 +6,7 @@ body {
   }
   form {
     width: 300px;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -42,6 +42,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    &:hover .card:not(:hover){
+      opacity: 0.6;
+    }
     .card {
       width: 350px;
       height: 400px;
@@ -53,8 +56,12 @@ body {
       border-radius: 10px;
       margin: 5px;
       padding: 0 20px;
+      cursor: pointer;
       h3 {
         font-size: 1.5rem;
+      }
+      span {
+        position: relative;
       }
       #movieReleaseDate {
         font-size: 0.8rem;
@@ -78,7 +85,24 @@ body {
       #movieScore {
         color: white;
       }
+      #scorePic {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -1px;
+        right: -25px;
+      }
     }
   }
-
+  #logo {
+    margin-top: 100px;
+    img {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
